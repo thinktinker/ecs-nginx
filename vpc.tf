@@ -11,4 +11,9 @@ data "aws_subnets" "existing_subnets" {
     name   = "vpc-id"
     values = [var.vpc_id]
   }
+  filter {                # Change
+    name   = "tag:Name"   # Look for the tag:Name
+    values = ["*public*"] # Look for Names with public in it
+  }
+  
 }
