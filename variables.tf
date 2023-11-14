@@ -13,5 +13,5 @@ variable "ex_role_arn" {
 variable "sg_id" {
     description = "The security group id"
     type        = string
-    default     = "sg-05ff8047411fe813c"
+    default     = "sg-0163f736062c9790b"
 }
