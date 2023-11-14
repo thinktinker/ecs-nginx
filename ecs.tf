@@ -14,7 +14,7 @@ resource "aws_ecs_task_definition" "own_task_definition" {
     image_url        = "nginx:latest"
     container_name   = "NGINX"
     log_group_region = "us-east-1"
-    log_group_name   = "/ecs/sean-taskdef-tf"
+    log_group_name   = "/ecs/sean-taskdef-tf" # Update accordingly
     log_group_prefix = "ecs"
   })
 }
